@@ -5,5 +5,3 @@ SendMethodEntity = SendMethod(requests.session())
 SendMethodEntity.login()
 
 
-
-

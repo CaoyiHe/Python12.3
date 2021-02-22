@@ -2,7 +2,6 @@ import requests
 from common.session import SendMethodEntity
 from common.send_method import SendMethod
 
-
 class DingDing:
     def __init__(self):
         self.url = "https://oapi.dingtalk.com/robot/send?access_token=7fb367800c0cb2e95d6140cba391d449c8b2b98185b02151fa0af00a9508015e"
@@ -16,7 +15,7 @@ class DingDing:
                 "content": "test:test"
             }
         }
-        response = SendMethodEntity.send_method(self.method, self.url, self.headers, data=data )
+        response = SendMethodEntity.send_method(self.method, self.url, headers=self.headers, data=data)
         print(response)
 
 

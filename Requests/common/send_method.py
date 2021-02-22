@@ -18,7 +18,6 @@ class SendMethod:
             response = self.session.request(method=method, url=url, params=params, headers=headers)
         elif method == "post" or method == "put":
             response = self.session.request(method=method, url=url, json=data, headers=headers)
-            print(response)
         else:
             print("请求方式不正确")
             response = None
